@@ -76,11 +76,22 @@ When an agent gives you a number that matters, **check the citation it points to
 
 ---
 
-## See it run on a live deal
+## From prompts to product
 
-These prompts give you the diligence *discipline*. [Deal OS](https://devaland.com) is the same discipline as a product — citations verified against the source automatically, contradictions flagged across a whole data room, briefs you can hand to an IC.
+These agents give you the *discipline* — a prompt you run yourself, one document at a time, checking each citation by hand. That's genuinely most of the value, and it's free. Use them and never pay anyone a cent.
 
-**→ Here's a real, source-cited brief on a live deal: https://os.devaland.com/sample-brief**
+[Deal OS](https://devaland.com) is the same discipline enforced automatically, at the scale of a real data room:
+
+| The agents (this repo) | Deal OS |
+|---|---|
+| You paste one document and run one agent at a time | Reads a whole data room at once |
+| Each agent cites its source; you verify by hand | Every citation is verified against the source automatically — unverifiable claims are discarded before you see them |
+| Contradictions surface only if you run the Citation Checker over each pair yourself | Contradictions flagged across every document at once |
+| The output is a chat you copy out | Briefs you can export for an IC or lender, with an auditable trail of what was verified vs. held back for your call |
+
+If you only ever use the prompts, that's a win — they're yours, MIT, forever. If you're running more than one deal at a time and the by-hand checking stops scaling, that's where the product earns its place.
+
+**→ See it on a live deal — a real, source-cited brief: https://os.devaland.com/sample-brief**
 
 ---
 
