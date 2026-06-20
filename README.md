@@ -6,7 +6,7 @@ Built for searchers, independent sponsors and small funds who don't have a ten-p
 
 > **Every factual claim is cited back to the source it came from — or it gets cut before you ever see it.**
 
-Most people use Claude to *summarise* a document. In a deal, the summary is the one thing you can't afford to trust — if it invents an EBITDA figure or quietly softens a customer-concentration risk, that's not a typo, it's a blown deal. So this pack is built the other way round: small, single-job agents that show their work and tell you when something they need is missing, rather than guessing.
+Most people use Claude to *summarize* a document. In a deal, the summary is the one thing you can't afford to trust — if it invents an EBITDA figure or quietly softens a customer-concentration risk, that's not a typo, it's a blown deal. So this pack is built the other way round: small, single-job agents that show their work and tell you when something they need is missing, rather than guessing.
 
 These are the same diligence patterns that run inside [Deal OS](https://devaland.com) — open-sourced so you can run them yourself.
 
@@ -54,7 +54,7 @@ The agents are ordered to follow a real deal. Feed the output of one into the ne
 | 17 | [Question-List Builder](skills/question-list-builder/SKILL.md) | Writes the diligence question list you'd have forgotten |
 | 18 | [Management-Meeting Prep](skills/management-meeting-prep/SKILL.md) | Gets you ready to run a sharp management meeting |
 | 19 | [IC Memo Writer](skills/ic-memo-writer/SKILL.md) | Turns your diligence into a clean investment-committee-style memo |
-| 20 | [Data-Room Tracker](skills/data-room-tracker/SKILL.md) | Keeps the closing process organised so nothing slips |
+| 20 | [Data-Room Tracker](skills/data-room-tracker/SKILL.md) | Keeps the closing process organized so nothing slips |
 
 ---
 
@@ -97,7 +97,7 @@ If you only ever use the prompts, that's a win — they're yours, MIT, forever. 
 
 ## One honest note
 
-These agents are analytical tools to speed up your own judgement and help you read deals faster. They are **not** investment, legal, tax or accounting advice, and they don't replace your own verification or your advisers. Always check an agent's output against the source documents — which is exactly what the cited rule is designed to let you do.
+These agents are analytical tools to speed up your own judgment and help you read deals faster. They are **not** investment, legal, tax or accounting advice, and they don't replace your own verification or your advisers. Always check an agent's output against the source documents — which is exactly what the cited rule is designed to let you do.
 
 ## License
 
