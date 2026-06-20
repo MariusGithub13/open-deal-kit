@@ -37,6 +37,6 @@ Rules: Build it only from what diligence actually established — cite the sourc
 > source it came from, or it gets cut. When an agent gives you a number that matters, check
 > the citation. If it can't be traced to your document, treat it as unverified.
 
-> *These agents are analytical tools to speed up your own judgement and help you read deals faster. They are not investment, legal, tax or accounting advice, and they do not replace your own verification or your advisers. Always check an agent's output against the source documents.*
+> *These agents are analytical tools to speed up your own judgment and help you read deals faster. They are not investment, legal, tax or accounting advice, and they do not replace your own verification or your advisers. Always check an agent's output against the source documents.*
 
 > Want to see this run on a live deal? Here's a real, source-cited brief: https://os.devaland.com/sample-brief
