@@ -1,0 +1,49 @@
+<svg width="1000" height="420" viewBox="0 0 1000 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E1A24"/>
+      <stop offset="1" stop-color="#13252F"/>
+    </linearGradient>
+    <linearGradient id="cutline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E8552E"/>
+      <stop offset="1" stop-color="#FF7A4D"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="420" fill="url(#bg)"/>
+
+  <!-- left margin rule -->
+  <line x1="96" y1="60" x2="96" y2="360" stroke="#E8552E" stroke-opacity="0.32" stroke-width="2"/>
+
+  <!-- eyebrow -->
+  <text x="120" y="96" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="16" letter-spacing="3" fill="#7FB0AE">THE&#160;DEAL&#160;TEAM&#160;&#160;·&#160;&#160;20&#160;CLAUDE&#160;AGENTS&#160;·&#160;MIT</text>
+
+  <!-- cite the source -->
+  <text x="118" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="700" fill="#F4F6F5">cite the source</text>
+
+  <!-- or cut the claim, struck through -->
+  <text x="118" y="262" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="700" fill="#5E7A82">or cut the claim</text>
+  <line x1="113" y1="241" x2="520" y2="241" stroke="url(#cutline)" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- citation marker line -->
+  <g transform="translate(120,326)">
+    <rect x="0" y="-21" width="34" height="29" rx="4" fill="#E8552E" fill-opacity="0.16" stroke="#E8552E" stroke-opacity="0.55" stroke-width="1.5"/>
+    <text x="17" y="-1" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="14" font-weight="700" fill="#FF7A4D" text-anchor="middle">p.9</text>
+    <text x="50" y="-1" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="15" fill="#9DBDBA">every claim traces to its source, or it never reaches you.</text>
+  </g>
+
+  <!-- right brief card -->
+  <g transform="translate(742,116)" font-family="ui-monospace, 'SF Mono', Menlo, monospace">
+    <rect x="-24" y="-26" width="258" height="200" rx="10" fill="#0A141B" stroke="#244049" stroke-width="1.5"/>
+    <circle cx="0" cy="2" r="4" fill="#5FB98C"/>
+    <text x="16" y="7" font-size="13" fill="#C9D6D4">no customer &gt; 15%</text>
+    <text x="16" y="25" font-size="11" fill="#5FB98C">verified · CIM p.8</text>
+    <circle cx="0" cy="60" r="4" fill="#E8552E"/>
+    <text x="16" y="65" font-size="13" fill="#C9D6D4">top customer ~ 22%</text>
+    <text x="16" y="83" font-size="11" fill="#FF7A4D">conflict · CIM p.9</text>
+    <circle cx="0" cy="118" r="4" fill="#5E7A82"/>
+    <text x="16" y="123" font-size="13" fill="#6F8A8F">no litigation</text>
+    <line x1="14" y1="119" x2="118" y2="119" stroke="#6F8A8F" stroke-width="1.5"/>
+    <text x="16" y="141" font-size="11" fill="#6F8A8F">cut · ask for history</text>
+  </g>
+</svg>
