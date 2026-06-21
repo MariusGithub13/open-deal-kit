@@ -1,6 +1,6 @@
 # Contributing
 
-These agents come from running real deals. If you've improved one — or built a new agent that earns its place on the bench — contributions are welcome.
+These agents come from running real deals. If you've improved one, or built a new agent that earns its place on the bench, contributions are welcome.
 
 **The one rule.** Every agent in this pack enforces the same discipline: *a factual claim about the deal is cited to its source, or it gets cut.* A contribution that lets an agent assert numbers it can't trace won't be merged. Keep agents narrow (one job), honest (they say "not stated" instead of guessing), and grounded (they ask for missing inputs rather than inventing them).
 
