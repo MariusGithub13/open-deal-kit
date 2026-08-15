@@ -67,4 +67,4 @@ This kit is a set of analytical tools to speed up your own judgment and help you
 
 ## License
 
-[MIT](LICENSE), use it, fork it, adapt it to your own thesis. Compiled by Marius Andronie · [Devaland · Deal OS](https://devaland.com).
+[MIT](LICENSE), use it, fork it, adapt it to your own thesis. What has changed and when is in the [changelog](CHANGELOG.md). Compiled by Marius Andronie · [Devaland · Deal OS](https://devaland.com).
