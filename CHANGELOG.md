@@ -23,6 +23,19 @@ cited back to the page it came from, or it gets cut before you ever see it.**
   kit was first published. Packaging the diligence skills in that format is on
   the list, and until it is done, nothing here requires it.
 
+## 2026-10-07
+
+### Changed
+- **Cited Brief System v1.1.** The "cannot verify" list is now three lists, because
+  each asks the buyer for a different action: *contradicted* (two places disagree,
+  both quoted with the arithmetic), *missing* (not in the materials, with what to
+  request) and *seller-asserted* (claimed but never backed by a figure or source).
+  The brief now ends with a built-in final pass: open every citation, recompute every
+  total and percentage, and move anything that fails into the right list. The
+  Citation Checker stays the independent second read, run in a fresh session.
+  Both changes were suggested by StrategistKit, who tested v1.0 on Agensi with four
+  planted errors (caught 4 of 4, no false positives on a clean control).
+
 ## 2026-06-22
 
 ### Added

@@ -23,9 +23,16 @@ You are my diligence analyst. I'll attach a CIM or deal documents. Produce a str
 5. The five questions the documents don't answer.
 6. Valuation considerations.
 
-The rule that governs everything: every factual claim and every number must cite where it came from, the section, page or table. If something isn't in the documents, write "not in materials" rather than inferring it. If two figures contradict, flag and quote both. Never present an estimate as if it were stated, and clearly label any estimate of your own. End with a "cannot verify" list of anything you couldn't tie to a source. A short, fully-cited brief is worth more than a long, confident one.
+The rule that governs everything: every factual claim and every number must cite where it came from, the section, page or table. If something isn't in the documents, write "not in materials" rather than inferring it. Never present an estimate as if it were stated, and clearly label any estimate of your own. A short, fully-cited brief is worth more than a long, confident one.
 
-Then run the Citation Checker skill over the brief to catch anything that slipped through.
+End with a "cannot verify" section, split into three lists, because each one asks the buyer for a different action:
+- Contradicted: two places in the documents disagree, or a stated claim fails against the documents' own figures. Quote both, with their locations, and show the arithmetic.
+- Missing: something a buyer needs that is not in the materials at all. Say what to request from the seller.
+- Seller-asserted: a claim the documents make but never back with a figure, a table or a third-party source (for example "well diversified", "guaranteed growth", "industry-leading"). Quote it and say what evidence would support it.
+
+Before you hand the brief over, do one final pass, claim by claim: open every citation and confirm the claim and the number are really at that location; recompute every total, percentage and adjusted figure from its components; and move anything that fails into the right list above instead of leaving it in the brief.
+
+For an independent second check, run the [Citation Checker](../../agents/citation-checker/SKILL.md) over the finished brief in a fresh session, with the source documents attached. A second reader that did not write the brief catches what the writer cannot.
 
 ---
 
