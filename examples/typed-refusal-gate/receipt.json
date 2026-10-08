@@ -1,0 +1,112 @@
+{
+  "contract": "sentinel-pre-loi",
+  "status": "DATA_NULL",
+  "brief_written": false,
+  "accepted": {},
+  "not_ready": [
+    "ttm_period_end",
+    "revenue_by_customer_3y"
+  ],
+  "data_null": [
+    "historical_financial_summary",
+    "officer_compensation",
+    "balance_sheet_amounts"
+  ],
+  "reasons": [
+    "ttm_period_end: missing",
+    "revenue_by_customer_3y: missing",
+    "historical_financial_summary: null",
+    "officer_compensation: null",
+    "balance_sheet_amounts: null"
+  ],
+  "seal": "f380d54600de7308a8d9591e51d803d9906c892dfc13dafe30a41e30cfe2ec71",
+  "evidence_digest": "d840463872b8fc5275a496aac903709328c985cc707cf09e4cf8dd3beec79e2c",
+  "sources": [
+    {
+      "field": "ttm_revenue",
+      "locator": "Project_Sentinel_CIM.pdf :: Page 6 :: Section 5 Para 1",
+      "sha256": "f530d275c074a4cd89a48695a1642f13a4a2864515535d159a769ca747281a0d"
+    },
+    {
+      "field": "reported_ebitda",
+      "locator": "Sentinel_Financial_Statements.pdf :: Page 4 :: Para 1",
+      "sha256": "ba7b394e66d723b657efbe1bfa29fe917e6cd2e14bbefaa35cc9940dc206d032"
+    },
+    {
+      "field": "adjusted_ebitda",
+      "locator": "Sentinel_Financial_Statements.pdf :: Page 4 :: Para 1",
+      "sha256": "ba7b394e66d723b657efbe1bfa29fe917e6cd2e14bbefaa35cc9940dc206d032"
+    },
+    {
+      "field": "largest_customer_share",
+      "locator": "Project_Sentinel_CIM.pdf :: Page 9 :: Section 8 Para 1",
+      "sha256": "f530d275c074a4cd89a48695a1642f13a4a2864515535d159a769ca747281a0d"
+    },
+    {
+      "field": "change_of_control_review",
+      "locator": "Project_Sentinel_CIM.pdf :: Page 19 :: Section 18 Para 1",
+      "sha256": "f530d275c074a4cd89a48695a1642f13a4a2864515535d159a769ca747281a0d"
+    },
+    {
+      "field": "historical_financial_summary",
+      "locator": "Project_Sentinel_CIM.pdf :: Page 21 :: Section 20 Para 1",
+      "sha256": "f530d275c074a4cd89a48695a1642f13a4a2864515535d159a769ca747281a0d"
+    },
+    {
+      "field": "officer_compensation",
+      "locator": "Sentinel_2025_Tax_Return.pdf :: Page 2 :: Schedules Para 1",
+      "sha256": "26cf08084579fc7664f6c3764bdc9ad64f8f4276b61aaa8337ebe24bbc51bc80"
+    },
+    {
+      "field": "balance_sheet_amounts",
+      "locator": "Sentinel_Financial_Statements.pdf :: Page 3 :: Para 1",
+      "sha256": "ba7b394e66d723b657efbe1bfa29fe917e6cd2e14bbefaa35cc9940dc206d032"
+    }
+  ],
+  "documents": {
+    "Project_Sentinel_CIM.pdf": {
+      "url": "https://os.devaland.com/static/sample-sources/Project_Sentinel_CIM.pdf",
+      "sha256": "f530d275c074a4cd89a48695a1642f13a4a2864515535d159a769ca747281a0d"
+    },
+    "Sentinel_Financial_Statements.pdf": {
+      "url": "https://os.devaland.com/static/sample-sources/Sentinel_Financial_Statements.pdf",
+      "sha256": "ba7b394e66d723b657efbe1bfa29fe917e6cd2e14bbefaa35cc9940dc206d032"
+    },
+    "Sentinel_2025_Tax_Return.pdf": {
+      "url": "https://os.devaland.com/static/sample-sources/Sentinel_2025_Tax_Return.pdf",
+      "sha256": "26cf08084579fc7664f6c3764bdc9ad64f8f4276b61aaa8337ebe24bbc51bc80"
+    },
+    "Sentinel_Management_Call_Notes.pdf": {
+      "url": "https://os.devaland.com/static/sample-sources/Sentinel_Management_Call_Notes.pdf",
+      "sha256": "f8fe29d60944dca2598e2829f57c5ba4f53c2ef9f17cfefe8c7e7eaebad45c99"
+    }
+  },
+  "request_list_for_seller": [
+    "ttm_period_end: not in any of the four documents. Please provide it, with the document and page.",
+    "revenue_by_customer_3y: not in any of the four documents. Please provide it, with the document and page.",
+    "historical_financial_summary: the document shows it but leaves it empty (Project_Sentinel_CIM.pdf :: Page 21 :: Section 20 Para 1). Please provide the figures.",
+    "officer_compensation: the document shows it but leaves it empty (Sentinel_2025_Tax_Return.pdf :: Page 2 :: Schedules Para 1). Please provide the figures.",
+    "balance_sheet_amounts: the document shows it but leaves it empty (Sentinel_Financial_Statements.pdf :: Page 3 :: Para 1). Please provide the figures."
+  ],
+  "open_path": {
+    "contract": "sentinel-stated-fields",
+    "status": "ACCEPT",
+    "accepted": {
+      "ttm_revenue": "$6.21M",
+      "reported_ebitda": "$1.08M",
+      "adjusted_ebitda": "$1.42M",
+      "largest_customer_share": "22.0% (Northgate, $1,366,000 of $6,210,000)",
+      "change_of_control_review": "not undertaken by the seller"
+    },
+    "seal": "f464c1f7267614d918ca172d0b0dbef14c84640184cd175a145e7fbf303cea04",
+    "evidence_digest": "d338413bbd3bbdf965c029e889368fd1c939e0c0cdbf74cd78c2d83476a05e63"
+  },
+  "checks": {
+    "refusal: same input, same seal": true,
+    "refusal: a changed value leaves the seal unchanged (by design, a refusal seals the gap and carries no values)": true,
+    "accept: a changed value changes the seal": true,
+    "accept: a moved locator leaves the seal unchanged (sources are not in the seal)": true,
+    "accept: a moved locator changes the evidence digest": true
+  },
+  "gate": "typed-refusal v0.1.0 @ 712f2b5"
+}
