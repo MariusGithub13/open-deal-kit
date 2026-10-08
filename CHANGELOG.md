@@ -23,6 +23,22 @@ cited back to the page it came from, or it gets cut before you ever see it.**
   kit was first published. Packaging the diligence skills in that format is on
   the list, and until it is done, nothing here requires it.
 
+## 2026-10-08 (later the same day)
+
+### Changed
+- **Cited Brief System v1.3.** Three changes, all from a second blind paired test by
+  Arnstein (StrategistKit), four planted errors against a clean control, 4/4 caught and
+  0 false positives on v1.1, with three points left open:
+  every "cannot verify" item now goes in **exactly one list**, with a precedence rule
+  (a forward-looking claim is *seller-asserted*, with the history quoted beside it, never
+  *contradicted*; a point told outside the attached documents is *missing*; two figures
+  that may cover different periods are *missing* until the periods are known); the
+  final pass now checks **strengths** as well as numbers, so a strength with no cited
+  basis leaves the strengths section; and the final pass tests **relationships across
+  pages** (a change between periods against the one-off items and drivers stated
+  elsewhere), not only totals within one table. The v1.2 line that let a superlative's
+  missing baseline appear under both *seller-asserted* and *missing* is replaced.
+
 ## 2026-10-08
 
 ### Changed
