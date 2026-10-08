@@ -38,6 +38,11 @@ cited back to the page it came from, or it gets cut before you ever see it.**
   pages** (a change between periods against the one-off items and drivers stated
   elsewhere), not only totals within one table. The v1.2 line that let a superlative's
   missing baseline appear under both *seller-asserted* and *missing* is replaced.
+  Tested the same day with a blind run on the synthetic Project Sentinel deal and an
+  independent second reader (about 110 claims, every number correct, 8 moved). The run
+  still counted the seller's numbers adding up, and the seller's candour, as strengths,
+  so the rule now names both as never a strength, and the cross-page check names an
+  add-back dated to a different period from the earnings it adjusts.
 
 ## 2026-10-08
 
