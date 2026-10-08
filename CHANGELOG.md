@@ -23,6 +23,30 @@ cited back to the page it came from, or it gets cut before you ever see it.**
   kit was first published. Packaging the diligence skills in that format is on
   the list, and until it is done, nothing here requires it.
 
+## 2026-10-08 (evening)
+
+### Changed
+- **Cited Brief System v1.4.** Three rules from Arnstein's (StrategistKit) third blind test, run on v1.3 from
+  the Agensi version (on Claude, not Agensi's run_skill model): a subtler set of three planted errors, 3/3 caught
+  and 0 false positives, plus a regression on the earlier four inputs, 4/4 and 0 false positives, with no item in
+  two lists in any of the four runs. His three points:
+  a conflict that depends on a fact the materials do not state (which line a cost was booked on) goes under
+  *missing*, naming that fact; it is *contradicted* only when the stated figures cannot both be true whatever that
+  fact turns out to be. A strength cannot rest on a figure or trend that also appears under risks. And
+  **normalising cuts both ways**: when one-off costs are added back, one-off income (an asset or surplus-stock sale,
+  an insurance payout, a release of provisions) is taken out too, and the strictest figure is shown beside the
+  seller's, with the gap under *contradicted*. His run had found that last one unprompted; it is now a rule.
+  One more line from our own second reader: an evidence request named inside a *seller-asserted* item is not
+  listed again under *missing*.
+  Tested the same day on a new synthetic deal with four planted errors (one-off income left inside adjusted
+  EBITDA, a falling margin presented as a strength, a cost conflict that depends on the booking line, a headcount
+  stated two ways on the same date) against a neutral control: all four caught and classed as the rules say, the
+  control returned *contradicted* "none found"; an independent second reader checked 78 claims, 0 wrong numbers.
+  Regression on Project Sentinel: the same contradiction and missing items as v1.3. One change in behaviour:
+  v1.4 keeps no strengths on Sentinel, where v1.3 kept two (the recurring-revenue share has no table behind it,
+  and the prior years are not dated). That is the stricter rule working, and it is stated here so it is not a
+  surprise.
+
 ## 2026-10-08 (later the same day)
 
 ### Changed
