@@ -23,6 +23,19 @@ cited back to the page it came from, or it gets cut before you ever see it.**
   kit was first published. Packaging the diligence skills in that format is on
   the list, and until it is done, nothing here requires it.
 
+## 2026-10-08
+
+### Changed
+- **Cited Brief System v1.2.** Four changes, all from an adversarial test on Agensi by
+  Loretta Compliance (a four-page roofing CIM with planted traps; their verdict: "it held"):
+  the brief now opens with a status line, *"Second pass: NOT RUN"*, that only an
+  independent second reader in a fresh session may change, so the writer's own check
+  can never pass for an independent one; superlatives with no comparison figure on the
+  page ("record", "best-ever") always go under *seller-asserted*; a figure that depends
+  on reading an ambiguous phrase is shown only as a labelled sensitivity, after the
+  strictest figure the page supports; and industry knowledge the documents do not state
+  goes into a separate *Reviewer's aside (outside the documents)*, never into the facts.
+
 ## 2026-10-07
 
 ### Changed
