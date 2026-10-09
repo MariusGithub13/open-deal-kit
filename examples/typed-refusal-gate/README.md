@@ -4,13 +4,13 @@ A gate that decides before a word of the diligence brief is written. Every field
 present in the documents and carry a source; otherwise the gate refuses, names the gap, and the refusal becomes the
 request list for the seller. Nothing is filled in.
 
-- Gate: [typed-refusal](https://github.com/GrayWolfOne21/typed-refusal) v0.1.0 by Andrew Stevens (Loretta Compliance), MIT.
+- Gate: [typed-refusal](https://github.com/GrayWolfOne21/typed-refusal) v0.1.1 by Andrew Stevens (Loretta Compliance), MIT.
 - Deal: the synthetic Project Sentinel documents, public at https://os.devaland.com/static/sample-sources/
 - Locators in Loretta's format: `<Document_Name> :: <Page_Number> :: <Section_or_Block_ID>`, each with the SHA-256 of
   the document it points to.
 
 ```bash
-pip install "git+https://github.com/GrayWolfOne21/typed-refusal@712f2b5"
+pip install "git+https://github.com/GrayWolfOne21/typed-refusal@892b0a0"
 python3 gate_sentinel.py      # downloads the four PDFs, checks their hashes, writes receipt.json
 ```
 
@@ -33,6 +33,6 @@ fields the documents do state, the same gate accepts.
 Checked in the script, not assumed:
 - A refusal seals the gap (status, the missing and empty fields, the reasons) and carries no values, by design.
 - On ACCEPT, a changed value changes the seal.
-- Sources are not part of the seal: a locator moved to another page leaves the seal unchanged. The example therefore adds
-  an evidence digest, SHA-256 over the seal and every locator and document hash, which does change. It is ours, not
-  part of typed-refusal.
+- On ACCEPT, a moved locator or a changed document digest changes the seal: since v0.1.1 the seal binds the source
+  chain. That fix followed a finding from running v0.1.0 on this example (8 October 2026). The example also keeps its own
+  evidence digest over the seal and every locator and document hash, as an independent cross-check.

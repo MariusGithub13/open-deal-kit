@@ -4,8 +4,8 @@
 The gate decides BEFORE a word of the brief is written: every field a buyer needs before an LOI must be present
 in the documents and carry a source. A refusal is not an error; it is the request list for the seller.
 
-Gate: typed-refusal v0.1.0 by Andrew Stevens (Loretta Compliance), MIT, https://github.com/GrayWolfOne21/typed-refusal
-  pip install "git+https://github.com/GrayWolfOne21/typed-refusal@712f2b5"
+Gate: typed-refusal v0.1.1 by Andrew Stevens (Loretta Compliance), MIT, https://github.com/GrayWolfOne21/typed-refusal
+  pip install "git+https://github.com/GrayWolfOne21/typed-refusal@892b0a0"
 Documents: the four synthetic Sentinel PDFs published at https://os.devaland.com/static/sample-sources/
 Locator format (Loretta's): "<Document_Name> :: <Page_Number> :: <Section_or_Block_ID>"
 
@@ -58,7 +58,8 @@ sources = [
 d = evaluate(contract, payload, sources)
 s1, s2 = seal(d), seal(evaluate(contract, payload, sources))
 
-# Evidence digest (ours, not part of typed-refusal): binds the seal to every locator and document hash.
+# Evidence digest (ours, not part of typed-refusal). Since v0.1.1 the seal itself binds the sources; the digest is kept
+# as an independent cross-check over the seal and every locator and document hash.
 def evidence(seal_hex, srcs):
     rows = sorted((x.field, x.source_id, x.locator, x.digest) for x in srcs)
     return hashlib.sha256(json.dumps([seal_hex, rows], separators=(",", ":")).encode()).hexdigest()
@@ -90,10 +91,10 @@ receipt = {
         "refusal: same input, same seal": s1 == s2,
         "refusal: a changed value leaves the seal unchanged (by design, a refusal seals the gap and carries no values)": s_refused_tampered == s1,
         "accept: a changed value changes the seal": s_ok_tampered != s_ok,
-        "accept: a moved locator leaves the seal unchanged (sources are not in the seal)": s_ok_moved == s_ok,
+        "accept: a moved locator changes the seal (v0.1.1 binds the source chain)": s_ok_moved != s_ok,
         "accept: a moved locator changes the evidence digest": e_ok_moved != e_ok,
     },
-    "gate": "typed-refusal v0.1.0 @ 712f2b5",
+    "gate": "typed-refusal v0.1.1 @ 892b0a0",
 }
 json.dump(receipt, open("receipt.json", "w"), indent=2)
 print(json.dumps({k: receipt[k] for k in ("status", "brief_written", "not_ready", "data_null", "seal", "evidence_digest", "open_path", "checks")}, indent=2))
