@@ -26,7 +26,7 @@ cited back to the page it came from, or it gets cut before you ever see it.**
 ## 2026-10-08 (evening)
 
 ### Changed
-- **Cited Brief System v1.4.** Three rules from Arnstein's (StrategistKit) third blind test, run on v1.3 from
+- **Cited Brief System v1.4.** Three rules from StrategistKit's third blind test, run on v1.3 from
   the Agensi version (on Claude, not Agensi's run_skill model): a subtler set of three planted errors, 3/3 caught
   and 0 false positives, plus a regression on the earlier four inputs, 4/4 and 0 false positives, with no item in
   two lists in any of the four runs. His three points:
@@ -51,7 +51,7 @@ cited back to the page it came from, or it gets cut before you ever see it.**
 
 ### Changed
 - **Cited Brief System v1.3.** Three changes, all from a second blind paired test by
-  Arnstein (StrategistKit), four planted errors against a clean control, 4/4 caught and
+  StrategistKit, four planted errors against a clean control, 4/4 caught and
   0 false positives on v1.1, with three points left open:
   every "cannot verify" item now goes in **exactly one list**, with a precedence rule
   (a forward-looking claim is *seller-asserted*, with the history quoted beside it, never
