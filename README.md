@@ -33,9 +33,15 @@ The flagship is the **[Cited Brief System](systems/cited-brief-system/SKILL.md)*
 
 ```bash
 git clone https://github.com/MariusGithub13/open-deal-kit.git
-cp -r open-deal-kit/agents/*  ~/.claude/skills/
-cp -r open-deal-kit/systems/* ~/.claude/skills/
+mkdir -p ~/.claude/skills
+cp -r open-deal-kit/agents/*/  ~/.claude/skills/
+cp -r open-deal-kit/systems/*/ ~/.claude/skills/
 ```
+
+The `mkdir` matters on a machine that has never had a skill installed; without it `cp` stops with "No such file or
+directory". The trailing `*/` copies the 24 skill folders and leaves the two index READMEs behind. Every skill file's
+front matter and every relative link in the kit is checked on each push by `tests/check_kit.py`; what was run and
+checked on 15 October 2026, including every external link, is in [docs/README-PROOF-2026-10-15.md](docs/README-PROOF-2026-10-15.md).
 
 ### The one habit that makes this work
 When a tool gives you a number that matters, **check the citation it points to.** Every figure should trace back to a line in your document. If it can't, treat it as unverified. That single habit is the difference between *using* AI on a deal and *trusting* it.
