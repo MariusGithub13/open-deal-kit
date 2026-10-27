@@ -23,6 +23,8 @@ Most people use Claude to *summarize* a document. In a deal, the summary is the 
 
 The flagship is the **[Cited Brief System](systems/cited-brief-system/SKILL.md)** paired with the **[Citation Checker](agents/citation-checker/SKILL.md)**: produce a fully-cited brief on a deal, then audit it back against the source so nothing unverifiable reaches your decision. Start there.
 
+> Tested by StrategistKit: blind paired runs on v1.4, subtle set 3/3, regression 4/4, 0 false positives (run on Claude).
+
 ---
 
 ## How to use it
@@ -63,7 +65,7 @@ This kit gives you the *discipline*, a prompt you run yourself, one document at 
 
 If you only ever use the kit, that's a win, it's yours, MIT, forever. If you're running more than one deal at a time and the by-hand checking stops scaling, that's where the product earns its place.
 
-**→ See it on a live deal, a real, source-cited brief: https://os.devaland.com/sample-brief**
+**→ See it on a live deal, a real, source-cited brief: https://getdealos.tech/sample-brief**
 
 ---
 
